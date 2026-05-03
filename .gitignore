@@ -37,3 +37,4 @@ secrets.yaml
 # Temporary
 *.tmp
 *.temp
+files/config.yaml*
