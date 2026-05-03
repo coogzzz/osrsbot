@@ -1,0 +1,113 @@
+system:
+  db_path: "trading_history.db"
+  log_level: "INFO"
+  poll_interval_sec: 10
+
+serial:
+  port: "/dev/tty.usbmodemHIDFG1"
+  baud: 115200
+  timeout_sec: 2.0
+
+strategy:
+  trend_window: 1440
+  transaction_tax_pct: 1.0
+  nudge_offset_pct: 1.0
+  break_even_margin_pct: 3.0
+  max_active_orders: 4
+  min_profit_margin_pct: 3.0
+
+analyzer:
+  sma_period: 1440
+  buy_threshold_sma_pct: 2.5
+  max_position_value_gp: 1300000
+
+kinematics:
+  movement_speed_factor: 1.0
+  bezier_segments: 60
+  perlin_amplitude_px: 1.5
+  click_duration_mean_ms: 85
+  click_duration_std_ms: 18
+
+vision:
+  template_dir: "templates"
+  confidence_threshold: 0.85
+  canny_low: 50
+  canny_high: 150
+  empty_edge_density_max: 0.02
+  full_edge_density_min: 0.05
+  verification_timeout_sec: 10.0
+  verification_poll_ms: 250
+  slot_grid:
+    - [25, 80, 150, 120]
+    - [185, 80, 150, 120]
+    - [345, 80, 150, 120]
+    - [505, 80, 150, 120]
+
+system:
+  db_path: "trading_history.db"
+  log_level: "INFO"
+  poll_interval_sec: 10
+
+serial:
+  port: "/dev/tty.usbmodemHIDFG1"
+  baud: 115200
+  timeout_sec: 2.0
+
+strategy:
+  trend_window: 1440
+  transaction_tax_pct: 1.0
+  nudge_offset_pct: 1.0
+  break_even_margin_pct: 3.0
+  min_volume_5m: 100
+  max_spread_pct: 5.0
+  max_active_orders: 4
+  min_profit_margin_pct: 3.0
+  
+vision:
+  template_dir: "templates"
+  confidence_threshold: 0.85
+  canny_low: 50
+  canny_high: 150
+  empty_edge_density_max: 0.02
+  full_edge_density_min: 0.05
+  verification_timeout_sec: 10.0
+  verification_poll_ms: 250
+  slot_grid:
+    - [25, 80, 150, 120]
+    - [185, 80, 150, 120]
+    - [345, 80, 150, 120]
+    - [505, 80, 150, 120]
+
+assets:
+  - id: 536
+    name: "Dragon bones"
+    volume_floor: 1000
+    price_buffer_pct: 1.5
+  - id: 11936
+    name: "Dark crab"
+    volume_floor: 500
+    price_buffer_pct: 1.5
+  - id: 11230
+    name: "Dragon dart tip"
+    volume_floor: 1000
+    price_buffer_pct: 1.5
+  - id: 3144
+    name: "Karambwan"
+    volume_floor: 1000
+    price_buffer_pct: 1.5
+  - id: 12934
+    name: "Zulrah's scales"
+    volume_floor: 5000
+    price_buffer_pct: 1.5
+  - id: 219
+    name: "Grimy torstol"
+    volume_floor: 250
+    price_buffer_pct: 1.5
+  - id: 11990
+    name: "Teleport to house"
+    volume_floor: 250
+    price_buffer_pct: 1.5
+  - id: 3024
+    name: "Super restore(4)"
+    volume_floor: 250
+    price_buffer_pct: 1.5

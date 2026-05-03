@@ -1,0 +1,19 @@
+# HIL Framework — Python Dependencies
+# Install: pip install -r requirements.txt
+
+# Core
+pyyaml>=6.0
+requests>=2.31
+
+# Vision
+opencv-python>=4.8
+numpy>=1.24
+
+# Serial / Hardware
+pyserial>=3.5
+
+# GUI
+customtkinter>=5.2
+
+# Optional: for advanced Perlin noise (the built-in fallback works fine)
+# noise>=1.2.2
